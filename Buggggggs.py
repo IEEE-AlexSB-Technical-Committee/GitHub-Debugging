@@ -22,9 +22,12 @@ x = 10
 y = 0
 sum = x + y
 difference = x - y
+quotient=0
 product = x * y
-quotient = x / y
-
+if y==0:
+    print("invalid")
+else:
+    quotient=x/y
 print(f"Sum: {sum}, Difference: {difference}, Product: {product}, Quotient: {quotient}")
 
 # Prime number check
@@ -42,7 +45,7 @@ else:
 original_string = "Hello, World!"
 reversed_string = ""
 for i in range(len(original_string), 0, -1):
-    reversed_string += original_string[i]
+    reversed_string += original_string
 print("Original string:", original_string)
 print("Reversed string:", reversed_string)
 
@@ -76,8 +79,8 @@ else:
 
 # Sum of positive elements in a list
 numbers = [1, 2, -9, -1 , 3, 4, -7, 5]
-sum_elements = 0
-for num in number: 
+sum_elements =0
+for num in numbers: 
     if not num > 0:
      sum_elements += num
 print(f"Sum of elements: {sum_elements}")
@@ -104,9 +107,9 @@ else:
 
 # Appending four elements to the end of the list
 my_list = [1, 2, 3]
-my_list.append(4, 5)  
+my_list.insert(4, 5)  
 my_list.append([4, 5]) 
-print("My list = " + my_list)
+print("My list ="+ my_list)
 
 # Comparing different types
 value1 = 10
