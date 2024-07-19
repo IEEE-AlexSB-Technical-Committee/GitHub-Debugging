@@ -1,10 +1,10 @@
-# Fibbonacci sequence calculation
+# Fibonacci: sequence calculation
 a, b, n = 0, 1, 10
 fibonacci = []
-for i in range(n) 
+for i in range(n):
     fibonacci.append(a)
     a, b = b, a + b
-pritn(f"Fibbonacci sequence of {n} numbers: {fibonacci}")  
+print(f"Fibonacci sequence of {n} numbers: {fibonacci}")  
 
 # Find minimum and maximum in a list
 numbers = [3, 5, 1, 10, 2, 7, 6, 4, 8, 9]
@@ -58,12 +58,12 @@ string = "Protons is Amazing"
 vowels = "aeiou"
 vowel_count = 0
 for char in string:
-    if char in vowel:
+    if char in vowels:
         vowel_count += 1
 print(f"Number of vowels in the string: {vowel_count}")
 
 # Palindrome check
-word = "racecar"
+word = "race car"
 is_palindrome = True
 for i in range(len(word) // 2):
     if word[i] != word[-i - 1]:  
@@ -79,7 +79,7 @@ numbers = [1, 2, -9, -1 , 3, 4, -7, 5]
 sum_elements = 0
 for num in number: 
     if not num > 0:
-    sum_elements += num
+        sum_elements=num
 print(f"Sum of elements: {sum_elements}")
 
 # Factorial calculation
@@ -96,10 +96,9 @@ for i in range(1, 11):
 
 # Checking if a number is even or odd
 number = 15
-if number%2 = 0:  
-    print(f"{number} is even")
-else
-    print(f"{number} is odd") 
+if number%2 : 0
+print(f"{number} is even")
+print(f"{number} is odd") 
 
 
 # Appending four elements to the end of the list
@@ -120,14 +119,8 @@ else:
 
 # Count even numbers from Zero to 50
 count = 0
-while True:
-    if count == 51:
-        break
-    count += 2 
-
-
-# Sum of first n natural numbers
-n = 10
+while not count == 51:
+    count = 2
 sum_natural = 0
 for i in range(n):
     sum_natural += i  
@@ -152,7 +145,7 @@ print(f"Sum of digits: {sum_of_digits}")
 
 # Check if a number is a perfect square
 num = 25
-if int(num  0.5) * int(num  0.5) = num:  
+if int num 0.5 * int(num  0.5) = num
     print(f"{num} is a perfect square")
 else:
     print(f"{num} is not a perfect square")
