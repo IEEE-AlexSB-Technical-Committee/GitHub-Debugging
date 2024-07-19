@@ -15,8 +15,7 @@ y = 0
 sum = x + y
 difference = x - y
 product = x * y
-quotient = y / x
-
+quotient = x / y
 print(f"Sum: {sum}, Difference: {difference}, Product: {product}, Quotient: {quotient}")
 
 # reverse string 
