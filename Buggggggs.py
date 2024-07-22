@@ -125,15 +125,16 @@ else:
 # Count even numbers from Zero to 50
 count = 0
 while True:
-    if count == 51:
+    if count >= 50:
         break
     count += 2 
+    print(count)
 
 
 # Sum of first n natural numbers
 n = 10
 sum_natural = 0
-for i in range(n):
+for i in range(n+1):
     sum_natural += i  
 print(f"Sum of first {n} natural numbers: {sum_natural}")
 
