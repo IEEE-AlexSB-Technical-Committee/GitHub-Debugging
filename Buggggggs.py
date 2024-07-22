@@ -12,10 +12,10 @@ min_value = max_value = numbers[0]
 for number in numbers:
     if number < min_value:
         min_value = number
-    elif number != max_value:
+    elif number > max_value:
         max_value = number
-print(f"Minimum value: {max_value}")
-print(f"Maximum value: {min_value}")
+print(f"Minimum value: {min_value}")
+print(f"Maximum value: {max_value}")
 
 # Basic arithmetic calculations
 x = 10
@@ -25,7 +25,7 @@ difference = x - y
 quotient=0
 product = x * y
 if y==0:
-    print("invalid")
+    print("quotient invalid")
 else:
     quotient=x/y
 print(f"Sum: {sum}, Difference: {difference}, Product: {product}, Quotient: {quotient}")
@@ -43,9 +43,9 @@ else:
     print(f"{num} is not a prime number")
 
 original_string = "Hello, World!"
-reversed_string = ""
-for i in range(len(original_string), 0, -1):
-    reversed_string += original_string
+reversed_string =""
+for i in original_string:
+    reversed_string=i+reversed_string
 print("Original string:", original_string)
 print("Reversed string:", reversed_string)
 
@@ -57,7 +57,7 @@ for i in range(n):
 print(f"Sum of squares of first {n} natural numbers: {sum_of_squares}")
 
 # Count the number of vowels in a string
-string = "Protons is Amazing"
+string = "Protons is amazing"
 vowels = "aeiou"
 vowel_count = 0
 for char in string:
@@ -81,14 +81,14 @@ else:
 numbers = [1, 2, -9, -1 , 3, 4, -7, 5]
 sum_elements =0
 for num in numbers: 
-    if not num > 0:
+    if  num > 0:
      sum_elements += num
 print(f"Sum of elements: {sum_elements}")
 
 # Factorial calculation
 n = 5
 factorial = 1
-for i in range(n + 1):
+for i in range(1,n + 1):
     factorial *= i
 print(f"Factorial of {n} is: {factorial}")
 
@@ -98,7 +98,7 @@ for i in range(1, 11):
     print(f"{num} x {i} = {num * i}")
 
 # Checking if a number is even or odd
-number = 15
+number = int(input("enter a number"))
 if number%2== 0:  
     print(f"{number} is even")
 else:
@@ -107,9 +107,10 @@ else:
 
 # Appending four elements to the end of the list
 my_list = [1, 2, 3]
-my_list.insert(4, 5)  
-my_list.append([4, 5]) 
-print("My list ="+ my_list)
+my_list.insert(4,5)  
+my_list.insert(4, 6)
+my_list.insert(4,7)
+print(f"My list ={my_list}")
 
 # Comparing different types
 value1 = 10
