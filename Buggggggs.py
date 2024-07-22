@@ -157,7 +157,8 @@ print(f"Sum of digits: {sum_of_digits}")
 
 # Check if a number is a perfect square
 num = 25
-if int(num *0.5) + int(num*0.5) == num:  
+# if int(num *0.5) + int(num*0.5) == num:   
+if int(num**0.5)*int(num**0.5)==num:
     print(f"{num} is a perfect square")
 else:
     print(f"{num} is not a perfect square")
@@ -168,7 +169,7 @@ numbers = [1, 2, 2, 3, 4, 4, 5, 5 , 5]
 unique_numbers = []
 for number in numbers:
     if number in unique_numbers:
-        unique_numbers.add(number)  # AttributeError: 'list' object has no attribute 'add'
+       unique_numbers.append(number)  # AttributeError: 'list' object has no attribute 'add'
 print(f"Unique numbers: {unique_numbers}")
 
 # Swap two variables
