@@ -1,31 +1,31 @@
 # Fibbonacci sequence calculation
 a, b, n = 0, 1, 10
 fibonacci = []
-for i in range(n) 
+for i in range(n): 
     fibonacci.append(a)
     a, b = b, a + b
-pritn(f"Fibbonacci sequence of {n} numbers: {fibonacci}")  
+print(f"Fibbonacci sequence of {n} numbers: {fibonacci}")  
 
 # Find minimum and maximum in a list
-numbers = [3, 5, 1, 10, 2, 7, 6, 4, 8, 9]
+numbers = [3, 5, 1, 10, 2, 7, 6, 4, 8,9]
 min_value = max_value = numbers[0]
 for number in numbers:
     if number < min_value:
         min_value = number
-    elif number != max_value:
+    elif number > max_value:
         max_value = number
-print(f"Minimum value: {max_value}")
-print(f"Maximum value: {min_value}")
+print(f"Minimum value: {min_value}")
+print(f"Maximum value: {max_value}")
 
 # Basic arithmetic calculations
 x = 10
-y = 0
+y = 5
 sum = x + y
 difference = x - y
 product = x * y
 quotient = x / y
 
-print(f"Sum: {sum}, Difference: {difference}, Product: {product}, Quotient: {quotient}")
+print(f"Sum: {sum}, Difference: {difference}, Product: {product}, quotient: {quotient}") 
 
 # Prime number check
 num = 29
@@ -37,33 +37,33 @@ for i in range(2, num//2):
 if is_prime:
     print(f"{num} is a prime number")
 else:
-    print(f"{num} is not a prime number")
+    print(f"{num} is not a prime number") 
 
 original_string = "Hello, World!"
-reversed_string = ""
-for i in range(len(original_string), 0, -1):
-    reversed_string += original_string[i]
+reversed_string = original_string[::-1]
+
+    
 print("Original string:", original_string)
-print("Reversed string:", reversed_string)
+print("Reversed string:", reversed_string) 
 
 # Sum of squares of first n natural numbers
-n = 5
+n = 4
 sum_of_squares = 0
-for i in range(n): 
-    sum_of_squares += i^2  
+for i in range(1,n): 
+    sum_of_squares += i**2
 print(f"Sum of squares of first {n} natural numbers: {sum_of_squares}")
 
 # Count the number of vowels in a string
 string = "Protons is Amazing"
-vowels = "aeiou"
+vowels = ["a",'e','i','o','u']
 vowel_count = 0
-for char in string:
-    if char in vowel:
+for i in string:
+    if i in vowels:
         vowel_count += 1
-print(f"Number of vowels in the string: {vowel_count}")
+print(f"Number of vowels in the string: {vowel_count}") 
 
 # Palindrome check
-word = "racecar"
+word = "yay"
 is_palindrome = True
 for i in range(len(word) // 2):
     if word[i] != word[-i - 1]:  
@@ -72,45 +72,47 @@ for i in range(len(word) // 2):
 if is_palindrome:
     print(f"{word} is a palindrome")
 else:
-    print(f"{word} is not a palindrome")
+    print(f"{word} is not a palindrome") 
 
 # Sum of positive elements in a list
-numbers = [1, 2, -9, -1 , 3, 4, -7, 5]
+numbers = [-5,6,-4,100]
 sum_elements = 0
-for num in number: 
-    if not num > 0:
-    sum_elements += num
+for num in numbers: 
+    if  num > 0:
+       sum_elements += num
+       
 print(f"Sum of elements: {sum_elements}")
 
 # Factorial calculation
 n = 5
 factorial = 1
-for i in range(n + 1):
+for i in range(1,n+1):
     factorial *= i
-print(f"Factorial of {n} is: {factorial}")
+print(f"Factorial of {n} is: {factorial}") 
 
 # Multiplication table
-num = 3
+num=int(input('enter the number u want to find its multiplication table: '))
 for i in range(1, 11):
     print(f"{num} x {i} = {num * i}")
 
 # Checking if a number is even or odd
-number = 15
-if number%2 = 0:  
+number = 2
+if number%2 == 0:  
     print(f"{number} is even")
-else
-    print(f"{number} is odd") 
+else:
+    print(f"{number} is odd")  
 
 
 # Appending four elements to the end of the list
 my_list = [1, 2, 3]
-my_list.append(4, 5)  
-my_list.append([4, 5]) 
-print("My list = " + my_list)
+x=[4,5,6,7]
+for i in x:
+  my_list.append(i)
+print("My list = " , my_list) 
 
-# Comparing different types
+# # Comparing different types
 value1 = 10
-value2 = "10"
+value2 = 110
 if value1 == value2:
     print("Values are equal")
 else:
@@ -121,54 +123,56 @@ else:
 # Count even numbers from Zero to 50
 count = 0
 while True:
-    if count == 51:
+    if count == 50:
         break
-    count += 2 
+    else:
+      count=count+1
+    print(count) 
 
 
 # Sum of first n natural numbers
 n = 10
 sum_natural = 0
-for i in range(n):
+for i in range(n+1):
     sum_natural += i  
-print(f"Sum of first {n} natural numbers: {sum_natural}")
+print(f"Sum of first {n} natural numbers: {sum_natural}") 
 
 # Calculate the average of a list of numbers
-numbers = [3, 7, 2, 9, 12]
+numbers = [3, 7, 2]
 sum_numbers = 0
 for number in numbers:
     sum_numbers += number
-average = sum_numbers // len(numbers)  # Runtime error: TypeError
-print(f"Median of numbers: {average}")
+average = float(sum_numbers // len(numbers) ) # Runtime error: TypeError
+print(f"Median of numbers: {average}") 
 
 
 # Sum of digits of a number
 num = 12345
 sum_of_digits = 0
 while num > 0:
-    sum_of_digits += num // 10
-    num = num / 10  
-print(f"Sum of digits: {sum_of_digits}")
+  sum_of_digits+=num%10
+  num = num // 10
+ 
 
+print(f"Sum of digits: {sum_of_digits}") 
 # Check if a number is a perfect square
-num = 25
-if int(num  0.5) * int(num  0.5) = num:  
+num = 27
+if num ** 0.5 == int(num ** 0.5):   
     print(f"{num} is a perfect square")
 else:
     print(f"{num} is not a perfect square")
+
 
 
 # Remove duplicates from a list
 numbers = [1, 2, 2, 3, 4, 4, 5, 5 , 5]
 unique_numbers = []
 for number in numbers:
-    if number in unique_numbers:
-        unique_numbers.add(number)  # AttributeError: 'list' object has no attribute 'add'
+    if number not in unique_numbers:
+        unique_numbers.append(number)  # AttributeError: 'list' object has no attribute 'add'
 print(f"Unique numbers: {unique_numbers}")
 
 # Swap two variables
 a = 5
 b = 10
-a = b
-b = a
-print(f"After swapping: a = {a}, b = {b}")
+print(f"After swapping: a = {b}, b = {a}")
